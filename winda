@@ -1,0 +1,40 @@
+ #include <stdio.h>
+main()
+{
+float hasil;
+int t, r, s, jenis;
+char back;
+printf("\t\t\tproses menghitung volume dan luas\n\n");
+ulang :
+printf("Pilih salah satu nomor  : \n");
+printf("1. Volume kubus\n");
+printf("2. Luas lingkaran\n");
+printf("3. Volume silinder\n");
+printf("pilihan anda : ");
+scanf("%d", &jenis);
+    switch(jenis)
+    {
+case 1:
+    printf("Masukkan besar sisi : ");
+    scanf("%d", &s);
+    hasil= s * s * s;
+    printf("Hasil adalah :%d\n", s * s * s);
+    break;
+case 2:
+    printf("Masukkan besar jari-jari : ");
+    scanf("%d", &r);
+    hasil= 3.14 * r * r;
+    printf("Hasil adalah :%f\n",3.14 * r * r);
+    break;
+case 3 :
+    printf("Masukkan besar jari-jari : \n");
+    printf("Masukan besar tinggi :\n");
+    scanf("%d", &r);
+    hasil= 3.14 * r * r * t;
+    printf("Hasil adalah :%f\n",hasil= 3.14 * r * r * t);
+    break;
+    default:
+    printf("maaf kode yang Anda masukkan salah..\n");
+    goto ulang;
+    }
+}
